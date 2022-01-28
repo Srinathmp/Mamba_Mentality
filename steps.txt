@@ -6,3 +6,12 @@
 6. git commit -m "my first pr"
 7. git push origin contributor [Note this branch does not exist already on foked repo and will be created]
 8. Go to repo and pull request with appropriate message
+
+The above works if the public repo has one branch, what if you want to work on some particular branch?
+1. Fork the remote repo
+2. git clone https://github.com/Srinathmp/Code-Viz.git
+3. git pull origin main
+4. git remote -v 
+   git remote add origin https://github.com/Srinathmp/Code-Viz.git
+5. git fetch origin remote_branch:non_existent_local_branch
+6. git checkout non_existent_local_branch
